@@ -1,0 +1,34 @@
+{% set name = "machado" %}
+{% set version = "0.3.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://files.pythonhosted.org/packages/fe/f2/ecb021a7fb66ff255d31da910ae08ab21e2c95fdef5a1e9dc8ca33e6a632/machado-0.3.0.tar.gz"
+  sha256: cf379549ac13fa9379048a3f82e400d5badf0f3bf7cfa63205a847b152b712a7
+
+build:
+  number: 0
+
+requirements:
+  host:
+  - django
+  - setuptools
+  - pysam
+  - postgresql
+  - future
+
+about:
+  home: "https://github.com/lmb-embrapa/machado"
+  license: "GNU General Public v3 (GPLv3)"
+  license_family: GPL3
+  license_file: 
+  summary: "This library provides users with a framework to store, search and visualize biological data."
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
